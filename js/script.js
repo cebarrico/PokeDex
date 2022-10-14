@@ -30,6 +30,9 @@ async function renderPokemon(pokemon) {
     pokemonSearch = data.id;
   } else {
     pokeName.innerHTML = "Não Encontrado";
+    pokeImg.style.display = "none";
+    pokeType.innerHTML = "";
+    pokeNum.innerHTML = "";
   }
 }
 
