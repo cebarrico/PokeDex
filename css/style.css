@@ -7,14 +7,17 @@
 }
 
 body {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: rgb(46, 44, 44);
   height: 100vh;
   font-family: "Oxanium", cursive;
 }
 main {
   display: inline-block;
-  margin-top: 8%;
+
   padding: 10px;
   position: relative;
 }
@@ -23,12 +26,20 @@ main {
   width: 100%;
   max-width: 430px;
 }
-.pokemon-img {
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   bottom: 54%;
   left: 51%;
-  transform: translate(-63%, 20%);
-  height: 23%;
+  transform: translate(-60%, 26%);
+  width: 57%;
+  height: 25%;
+}
+.pokemon-img {
+  height: 80%;
+
   animation: 2s shake linear infinite;
 }
 
