@@ -10,7 +10,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  text-align: center;
   background-color: rgb(46, 44, 44);
   height: 100vh;
   font-family: "Oxanium", cursive;
@@ -20,6 +20,39 @@ main {
 
   padding: 10px;
   position: relative;
+}
+.nav-pikachu {
+  width: 100%;
+  height: 100px;
+  max-width: 430px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  border-radius: 30px;
+}
+.pikachu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  animation: 2.5s run linear infinite;
+}
+@keyframes run {
+  0% {
+    left: -30%;
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
 }
 
 .pokedex {
