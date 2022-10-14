@@ -22,6 +22,7 @@ async function renderPokemon(pokemon) {
 
   const data = await pokemonSearchApi(pokemon);
   if (data) {
+    pokeImg.style.display = "flex";
     pokeName.innerHTML = data.name;
     pokeNum.innerHTML = data.id;
     pokeType.innerHTML = data.types.map((typeInfo) => typeInfo.type.name);
