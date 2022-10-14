@@ -41,9 +41,10 @@ main {
 } */
 .pikachu {
   position: absolute;
-  top: -56px;
+  top: -71px;
   left: 0;
   width: 100px;
+  height: 100px;
   animation: 2.5s run linear infinite;
 }
 @keyframes run {
