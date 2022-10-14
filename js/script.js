@@ -26,10 +26,14 @@ async function renderPokemon(pokemon) {
     pokeName.innerHTML = data.name;
     pokeNum.innerHTML = data.id;
     pokeType.innerHTML = data.types.map((typeInfo) => typeInfo.type.name);
-    pokeImg.src =
-      data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
-        "front_default"
-      ];
+    if (data.id <= 600) {
+      pokeImg.src =
+        data["sprites"]["versions"]["generation-v"]["black-white"]["animated"][
+          "front_default"
+        ];
+    } else {
+      pokeImg.src = data["sprites"]["front_default"];
+    }
     search.value = "";
     pokemonSearch = data.id;
   } else {
