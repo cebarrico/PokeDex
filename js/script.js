@@ -7,7 +7,7 @@ const pokeType = document.querySelector(".pokemon-type");
 const btmNext = document.querySelector(".btm-next");
 const btmPrev = document.querySelector(".btm-previous");
 
-let pokemonSearch = 1;
+let pokemonSearch = 0;
 async function pokemonSearchApi(pokemon) {
   const data = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon}`);
   if (data.status == 200) {
